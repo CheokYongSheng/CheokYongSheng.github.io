@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EFFAFF;
+    font-family: Roboto, Lato, sans-serif;
+    font-size: 12pt;
+}
+
+header {
+    background: #00BFF3;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* for navigation bar */
+#btnMenu {
+    display: none;
+}
+
+.nav {
+    margin: 0 15%;
+    padding: 30px;
+    display: flex;
+}
+
+.nav li{
+    margin: auto;
+    list-style: none;
+}
+
+.nav a {
+    font-size: 16pt;
+    color: #000;
+    text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    #btnMenu {
+        margin: 5px 20px;
+        width: 25px;
+        font-size: 24pt;
+        text-align: right;
+        border: none;
+        background-color: transparent;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+    }
+    
+    .nav.show {
+        display: flex;
+    }
+    
+    .nav li {
+        padding: 10px;
+    }
+}
+
+/* for profile */
+.profile {
+    padding: 60px 8%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50%;
+    height: 50%;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    padding-bottom: 15px;
+    font-size: 50pt;
+    color: #00BFF3;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile p {
+    font-size: 16pt;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile h1 {
+        padding-bottom: 10px;
+        font-size: 28pt;
+    }
+}
+
+/* for all other sections */
+section {
+    padding: 60px 12%;
+}
+
+h2 {
+    padding-bottom: 35px;
+    font-size: 28pt;
+    text-align: center;
+}
+
+#aboutme,
+#contact {
+    min-height: 250px;
+    color: #FFF;
+    background-color: #00BFF3;
+}
+
+#eduLevel {
+    background-color: #AAF0FF;
+}
+
+#eduLevel li {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #EFFAFF;
+    border-radius: 25px;
+    list-style: none;
+}
+
+#knowledge h2 {
+    border-bottom: 3px solid #00BFF3;
+}
+
+.box {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box .box-item {
+    margin: 20px;
+    min-width: 35%;
+}
+
+.box-item ul {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.box-item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.box-item img {
+    width: 35px;
+}
+
+@media(max-width: 768px) {
+    section {
+        padding: 50px;
+    }
+}
